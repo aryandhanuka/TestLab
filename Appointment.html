@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Appointment Request form</h1>
+  <form class "input-container" action="HelloForm" method="GET">
+   
+    <label for="integerInput">Patient id</label><br>
+    <input type="number" id="integerInput" name="patient_id" pattern="[0-9]*" required><br>
+    <label for="integerInput">Service id</label><br>
+    <input type="number" id="integerInput" name="Service_id" pattern="[0-9]*" required><br>
+    <label for="doa">Date for appointment</label><br>
+    <input type="date" id="doa" name="doa" required><br>
+    <input type="hidden" id="unique_id" value="5" name="uid">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
